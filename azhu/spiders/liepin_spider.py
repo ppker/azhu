@@ -55,7 +55,7 @@ class LiepinSpider(RedisSpider):
 
         self.logger.info("peng. into parse")
         if 200 == response.status:
-            loss_date = time.strftime('%Y-%m-%d', time.localtime(time.time() - 86400 * 3))
+            loss_date = time.strftime('%Y-%m-%d', time.localtime(time.time() - 86400 * 0))
             # 获取url中的query params
             url_info = parse.parse_qs(parse.urlparse(response.url).query)
             if 0 < len(url_info) and 'key' in url_info:
