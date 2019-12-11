@@ -6,4 +6,4 @@ test.py
 *.xml
 /.idea/
 /azhu/spiders/__pycache__/
-
+/azhu/__pycache__/
