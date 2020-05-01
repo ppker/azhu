@@ -75,7 +75,7 @@ DOWNLOADER_MIDDLEWARES = {
 DOWNLOAD_TIMEOUT = 200
 DOWNLOAD_DELAY = 2
 # 禁用Cookie
-COOKIES_ENABLES = True
+COOKIES_ENABLES = False
 
 # DOWNLOAD_MAXSIZE = 1073741824 # 文件最大下载大小 default 1024MB
 
@@ -87,12 +87,15 @@ DOWNLOAD_WARNSIZE = 104857600 # 下载内容大小超过73554432kb 会警告
 #    'scrapy.extensions.telnet.TelnetConsole': None,
 #}
 
+'''
 EXTENSIONS = {
     'azhu.extensions.RedisSpiderSmartIdleClosedExtensions': 500,
 }
 
+
 REDIS_SPIDER_EXT_ENABLED = True
 IDLE_NUMBER = 120
+'''
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html

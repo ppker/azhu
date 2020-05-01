@@ -107,24 +107,22 @@ class RenrenItem(scrapy.Item):
         return insert_sql, params
 
 
-class RentItem(scrapy.Item):
+class ZufangItem(scrapy.Item):
 
     title = scrapy.Field()
-    publish_time = scrapy.Field()
-    rental_money = scrapy.Field()
-    pay_period = scrapy.Field() # 押一付几
-    rent_type = scrapy.Field() # 租赁方式
-    house_type = scrapy.Field() # 几室几厅
-    house_area = scrapy.Field() # 房屋类型
-    house_finish = scrapy.Field() # 精装修 豪华装修
-    orientation = scrapy.Field() # 朝向
-    floor = scrapy.Field() # 楼层
-    house_estate = scrapy.Field() # 所在小区
-    # region = scrapy.Field() # 所属区域
-    address = scrapy.Field() # 详细地址
-    publish_user = scrapy.Field() # 发布人
-    platform = scrapy.Field() # 租房平台
-    detail_url = scrapy.Field() # 请求的Url
+    rent = scrapy.Field()  # 租金
+    house_type = scrapy.Field() # 户型
+    house_type_full = scrapy.Field() # 房型(全)
+    house_area = scrapy.Field() # 面积
+    house_tier = scrapy.Field() # 楼层
+    house_orientation = scrapy.Field() # 朝向
+    house_labels = scrapy.Field() # 房屋标签 配套齐全、精装修
+    address = scrapy.Field()
+    charge_url = scrapy.Field() # detail页面
+    can_one = scrapy.Field() # 支持押一付一
+    estate_title = scrapy.Field() # 小区名字
+    has_balcony = scrapy.Field() # 是否有阳台
+    request_url = scrapy.Field() # 请求的url
 
 
 

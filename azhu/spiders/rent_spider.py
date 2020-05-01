@@ -6,7 +6,7 @@
 # @Desc
 
 import scrapy, re, time, sys
-from azhu.items import RentItem
+from azhu.items import ZufangItem
 from urllib import parse
 from scrapy_redis.spiders import RedisSpider
 
