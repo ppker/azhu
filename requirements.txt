@@ -142,7 +142,7 @@ vine==1.1.4
 w3lib==1.19.0
 webcolors==1.8.1
 websocket-client==0.48.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 Whoosh==2.7.4
 WTForms==2.2.1
 xlrd==1.2.0
